@@ -5,9 +5,9 @@ def suma_matriz(matriz):
     Incluir el código aquí para sumar los elementos de la matriz.
     """
     sum = 0
-    for filas in matriz:
-        for dato in filas:
-            suma+= dato
+    for fila in matriz:
+        for dato in fila:
+            suma += dato
     return suma 
 
 # Ejercicio 2: Encontrar el valor máximo en una matriz
