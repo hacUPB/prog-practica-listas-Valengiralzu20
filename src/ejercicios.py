@@ -51,7 +51,12 @@ def filtrar_pares(lista):
     Recibe una lista de números y devuelve una nueva lista con solo los números pares.
     Incluir el código aquí para filtrar los números pares.
     """
-    pass
+    pares=[]
+    for numero in numeros:
+        if numero % 2 ==0:
+            pares.append(numero)
+    return pares 
+    
 
 # Ejercicio 6: Contar la cantidad de palabras en una frase
 def contar_palabras(frase):
