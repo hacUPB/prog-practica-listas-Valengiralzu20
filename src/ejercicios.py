@@ -20,11 +20,16 @@ def maximo_matriz(matriz):
     Recibe una lista de listas y devuelve el valor máximo.
     Incluir el código aquí para encontrar el valor máximo en la matriz.
     """
-    valor_max= float("-inf")
-    for fila in matriz:
-        if elemento> valor_max:
-            valor_max= elemento 
-    return valor_max
+valor_maximo = float('-inf')  # Inicializamos con el valor más pequeño posible
+for fila in matriz:
+    for elemento in fila:
+      if elemento > valor_maximo:
+        valor_maximo = elemento
+return valor_maximo
+
+matriz = [[1, 2], [3, 4]]
+resultado = encontrar_maximo(matriz)
+print(resultado)
     
 
 # Ejercicio 3: Verificar si un número es primo
