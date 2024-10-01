@@ -4,11 +4,15 @@ def suma_matriz(matriz):
     Recibe una lista de listas y devuelve la suma de todos sus elementos.
     Incluir el código aquí para sumar los elementos de la matriz.
     """
-    sum = 0
+    suma_total = 0
     for fila in matriz:
-        for dato in fila:
-            suma += dato
-    return suma 
+        for elemento in fila:
+            suma_total += elemento
+    return suma_total
+
+matriz = [[1, 2], [3, 4]]
+resultado = sumar_elementos_matriz(matriz)
+print(resultado)
 
 # Ejercicio 2: Encontrar el valor máximo en una matriz
 def maximo_matriz(matriz):
